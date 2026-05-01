@@ -3,7 +3,7 @@ const socket = io(
     window.location.hostname === "localhost" ||
         window.location.hostname === "127.0.0.1"
         ? "http://localhost:8400"
-        : "https://your-backend-url.onrender.com"
+        : "https://chat-app-jc8j.onrender.com"
 );
 
 
