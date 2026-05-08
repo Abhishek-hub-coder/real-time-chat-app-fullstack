@@ -30,6 +30,7 @@ const usersDiv = document.getElementById('users-list');
 const userSearchInput = document.getElementById('userSearchInput');
 const typingDiv = document.getElementById('typing');
 const chatHeader = document.getElementById('chat-header');
+const systemNotification = document.getElementById('system-notification');
 
 let name = "";
 let selectedUserId = null;
@@ -39,6 +40,7 @@ const pendingSeenMessages = {};
 const chats = {};
 
 const audio = new Audio('ting.mp3');
+let systemNotificationTimer;
 
 localStorage.removeItem('ichatToken');
 localStorage.removeItem('ichatUsername');
@@ -98,8 +100,19 @@ function resetLiveConnectionState(message = "Select a user to start chatting") {
     onlineUsers = {};
     usersDiv.innerHTML = "";
     typingDiv.innerText = "";
+    systemNotification.innerText = "";
     messageContainer.innerHTML = "";
     chatHeader.innerText = message;
+}
+
+function showSystemNotification(message) {
+    systemNotification.innerText = message;
+
+    clearTimeout(systemNotificationTimer);
+
+    systemNotificationTimer = setTimeout(() => {
+        systemNotification.innerText = "";
+    }, 3000);
 }
 
 function showAuth(message = "") {
@@ -193,8 +206,10 @@ function connectSocket(token, username) {
         showAuth("Session expired. Please login again.");
     });
 
-    socket.on('user-joined', () => {
-        // Online users are shown in the sidebar via update-users.
+    socket.on('user-joined', userName => {
+        if (userName && userName !== name) {
+            showSystemNotification(`${userName} joined the chat`);
+        }
     });
 
     socket.on('receive', data => {
@@ -292,8 +307,10 @@ function connectSocket(token, username) {
         }, 5000);
     });
 
-    socket.on('left', () => {
-        // Online users are shown in the sidebar via update-users.
+    socket.on('left', userName => {
+        if (userName && userName !== name) {
+            showSystemNotification(`${userName} left the chat`);
+        }
     });
 }
 

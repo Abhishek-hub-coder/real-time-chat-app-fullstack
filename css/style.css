@@ -173,6 +173,19 @@ nav {
     font-weight: bold;
 }
 
+#system-notification {
+    min-height: 24px;
+    padding: 6px 12px;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#system-notification:empty {
+    padding: 0;
+    min-height: 0;
+}
+
 /* CHAT BOX */
 .container {
     flex: 1;
