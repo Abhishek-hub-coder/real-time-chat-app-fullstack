@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iChat-Real Time Socket Chat App</title>
+    <title>iChat</title>
+
     <script defer src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
     <script defer src="./js/client.js"></script>
-
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,20 +15,67 @@
 <body>
 
     <nav>
-        <img class="logo" src="chat.png" alt="Chat Logo">
-        <h1>Welcome to my iChat-Real Socket Chat App.</h1>
+        <h1>iChat - Real Time Chat</h1>
     </nav>
 
-    <div class="container">
-        <!-- Messages will be dynamically added here -->
+    <div id="auth-container">
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-auth-tab="login">Login</button>
+                <button class="auth-tab" data-auth-tab="register">Register</button>
+            </div>
 
+            <div class="auth-panel active" id="loginPanel">
+                <h2>Welcome Back</h2>
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button id="loginBtn">Login</button>
+            </div>
+
+            <div class="auth-panel" id="registerPanel">
+                <h2>Create Account</h2>
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <button id="registerBtn">Register</button>
+            </div>
+
+            <p id="authMessage"></p>
+        </div>
     </div>
 
-    <div class="send">
-        <form action="#" id="send-container">
-            <input type="text" name="messageInp" id="messageInp" placeholder="Enter your message" required>
-            <button class="btn" type="submit">Send</button>
-        </form>
+    <div class="app">
+
+        <!-- USERS -->
+        <div class="sidebar">
+            <div class="profile-row">
+                <span id="currentUser"></span>
+                <button id="logoutBtn">Logout</button>
+            </div>
+            <h3>Online Users</h3>
+            <input type="text" id="userSearchInput" placeholder="Search users">
+            <div id="users-list"></div>
+        </div>
+
+        <!-- CHAT -->
+        <div class="chat-area">
+
+            <div id="chat-header">
+                Select a user to start chatting
+            </div>
+
+            <div class="container"></div>
+
+            <div id="typing"></div>
+
+            <div class="send">
+                <form id="send-container">
+                    <input type="text" id="messageInp" placeholder="Enter message">
+                    <button>Send</button>
+                </form>
+            </div>
+
+        </div>
+
     </div>
 
 </body>
