@@ -311,58 +311,76 @@ Redis adapter for Socket.IO scaling
 Better mobile UI
 Admin dashboard
 
-Screenshots
+## Screenshots
+
+### Login and Registration Page
+
+<img width="1920" alt="Login Page" src="https://github.com/user-attachments/assets/8b77bf0d-30d8-4275-9122-eefdd419c7f8" />
+
+<img width="1920" alt="Registration Page" src="https://github.com/user-attachments/assets/fe9194d9-7da8-4e8b-ab32-02953cf56fdb" />
+
+---
+
+### Online Users Dashboard
+
+<img width="1920" alt="Online Users Dashboard" src="https://github.com/user-attachments/assets/b408e4a9-9207-49e6-bcac-b24abca2fe64" />
+
+---
+
+### Private Chat Request
+
+<img width="1920" alt="Private Chat Request" src="https://github.com/user-attachments/assets/4e37b927-ecde-484b-b035-0ee71e167cf8" />
+
+<img width="1920" alt="Accept or Decline Request" src="https://github.com/user-attachments/assets/28226065-5127-4a3a-a92d-eebfecc5004f" />
+
+---
+
+### Real-Time Private Chat
+
+<img width="1920" alt="Private Chat" src="https://github.com/user-attachments/assets/4e552007-77bb-40f9-9e15-8a2533afe9c1" />
+
+<img width="1920" alt="Real-Time Messaging" src="https://github.com/user-attachments/assets/f94e46d0-f410-4d37-8cf3-92e08493cc8a" />
+
+---
+
+### Typing Indicator
+
+<img width="1920" alt="Typing Indicator" src="https://github.com/user-attachments/assets/9a5d2374-0d14-473a-a890-56a8e5cc5143" />
+
+---
+
+### Sent, Delivered, and Seen Status
+
+<img width="1920" alt="Delivered Status" src="https://github.com/user-attachments/assets/bcf18923-13fd-4970-97b8-9fa3f718ea35" />
+
+<img width="1920" alt="Seen Status" src="https://github.com/user-attachments/assets/eb7c00ad-82db-47af-a7c9-31b8ef958ecc" />
+
+---
+
+### Persistent Chat History After Refresh
+
+Press **Windows + F5**, refresh the application, and select the same user to view previously stored private chats.
+
+<img width="1920" alt="Chat History" src="https://github.com/user-attachments/assets/04c7d71c-4b58-4cb0-bac3-7477b658fc6c" />
+
+<img width="1920" alt="Persistent Chat Storage" src="https://github.com/user-attachments/assets/e440fac8-c44b-4802-a5cc-3278b3a64e2f" />
+
+---
+
+### MongoDB Atlas Users Collection
+
+<img width="1920" alt="Users Collection" src="https://github.com/user-attachments/assets/9a4fe419-6f5d-4766-b76c-426e799cdf5c" />
+
+---
+
+### MongoDB Atlas Messages Collection
+
+<img width="1920" alt="Messages Collection" src="https://github.com/user-attachments/assets/47319f11-e763-4a4f-815b-7c9b35baaf28" />
+
+---
+
+## Author
+
+**Abhishek Sharma**
 
 
-Login and Registration Page
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b77bf0d-30d8-4275-9122-eefdd419c7f8" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fe9194d9-7da8-4e8b-ab32-02953cf56fdb" />
-
-
-
-Online Users Dashboard
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b408e4a9-9207-49e6-bcac-b24abca2fe64" />
-
-
-Private Chat Request
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4e37b927-ecde-484b-b035-0ee71e167cf8" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28226065-5127-4a3a-a92d-eebfecc5004f" />
-
-
-
-
-Real-Time Private Chat
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4e552007-77bb-40f9-9e15-8a2533afe9c1" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f94e46d0-f410-4d37-8cf3-92e08493cc8a" />
-
-
-Typing Indicator
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9a5d2374-0d14-473a-a890-56a8e5cc5143" />
-
-
-Sent, Delivered, and Seen Status
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bcf18923-13fd-4970-97b8-9fa3f718ea35" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eb7c00ad-82db-47af-a7c9-31b8ef958ecc" />
-
-
-
-Persistent Chat History
-press windows + f5 and refrsh and select the same user with whom you were previously chatting and see the private chat.
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/04c7d71c-4b58-4cb0-bac3-7477b658fc6c" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e440fac8-c44b-4802-a5cc-3278b3a64e2f" />
-
-
-
-
-
-MongoDB Atlas Users Collection
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9a4fe419-6f5d-4766-b76c-426e799cdf5c" />
-
-
-MongoDB Atlas Messages Collection
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/47319f11-e763-4a4f-815b-7c9b35baaf28" />
-
-
-Author
-Abhishek Sharma
